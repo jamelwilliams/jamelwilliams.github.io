@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
+      rel="stylesheet"
+    />
     <style>
       #Title {
       }
@@ -27,9 +33,7 @@
 
         text-align: center;
         position: relative;
-
       }
-      
 
       h3 {
         text-align: center;
@@ -39,46 +43,83 @@
         background-image: url(media/white-clean-crumpled-notebook-paper-600nw-2448398501.png);
         border: 10px dotted;
         border-radius: 50px;
-        
-        
+        padding-bottom: 50%;
       }
       #links {
         font-size: 40px;
         font-family: "Love Ya Like A Sister", cursive;
         font-weight: 400;
         font-style: italic;
-        
+
         border-radius: 50%;
       }
       .img {
         position: relative;
       }
-      #purp{
-        position: fixed;
+      #purp {
+        position: absolute;
         top: 0;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 500px;
-        height: 40px;
-        
+        left: 560px;
+        bottom: 30px;
       }
-      
-      
+      #Nav-bar {
+        display: fixed;
+        position: relative;
+        border-style: groove;
+        border-radius: 50px;
+        height: 50px;
+        top: 15px;
+      }
+      #Nav-items {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 15px;
+        font-family: "Rubik Iso", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      #bottom {
+        position: absolute;
+        top: 1500px;
+      }
     </style>
   </head>
   <body>
-    <div id="page">
+    <div id="Nav-bar">
+      <div id="Nav-items">
+        <a href="index.html"><h1>Home</h1></a>
+        <a href="index.html"><h1>Projects</h1></a>
+        <a href="mailto:jamelwilliams975@gmail.com"><h1>Contact</h1></a>
+      </div>
     </div>
-    
-    <div id="Title">
-      <h1 id="fredericka-the-great-regular">Jamel Williams</h1>
-    </div>
-    <div id="links">
-      <h3><a id="code" href="Resume.html">Here's my Resume</a></h3>
-      <h3><a href="https://github.com/jamelwilliams">Here's my GitHub</a></h3>
-      <h3><a href="https://www.linkedin.com/in/jamel-williams-2aa51119a/?trk=opento_sprofile_goalscard">Here's my LinkedIn</a></h3>
 
+    <div id="Title">
+      <img src="media\Untitled.png" />
     </div>
+
+    <div id="links">
+      <h3>
+        <a href="media\_Resume feb 2025.pdf">
+          <img src="media\resume.png" alt="My GitHub" />
+        </a>
+      </h3>
+      <h3>
+        <a href="https://github.com/jamelwilliams">
+          <img src="media\githubv1.2" alt="My GitHub" />
+        </a>
+      </h3>
+      <h3>
+        <a
+          href="https://www.linkedin.com/in/jamel-williams-2aa51119a/?trk=opento_sprofile_goalscard"
+        >
+          <img src="media\linkedinv1.2" alt="My LinkedIn" />
+        </a>
+      </h3>
+    </div>
+    <div id="projects">
+      <img src="media\projects3.png" height="100px" />
+    </div>
+    <div id="bottom"><img src="media\logo.png" height="75px" /></div>
   </body>
 </html>
